@@ -17,9 +17,9 @@ Configuration
 
 Tips
 ----
-- OpenDNS transforms only work on Domain and IP entities. For example, before running a transform on an NSrecord entity, change that entity's type to IPv4Address.
-- OpenDNS transforms produce Domain, IPv4Address, NSRecord, and AS entity types.
+- OpenDNS transforms work on Domain, IP, Email, and Hash entities. Before running a transform on an NSrecord entity, change that entity's type to IPv4Address.
+- OpenDNS transforms produce Domain, IPv4Address, NSRecord, Email, Hash,  and AS entity types.
 - Some OpenDNS transforms (like domain-to-ips and ip-to-domains) potentially return a large number of entities
-    - be patience, the transform has to receive all data from the API before it draws it in Maltego
+    - be patient, the transform has to receive all data from the API before it draws it in Maltego
     - be aware of the maximum number of results (entities/nodes) allowed on your graph (12, 50, 255, 10k)
 
